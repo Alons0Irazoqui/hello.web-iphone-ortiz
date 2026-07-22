@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iPhone Ortiz | iPhones Seminuevos Liberados y Garantizados en Querétaro</title>
+  <meta name="description" content="iPhone Ortiz — iPhones seminuevos, 100% originales y liberados de fábrica en Plaza de la Tecnología, Querétaro. iPhone 16, 17 Pro Max y más, con garantía por escrito. 📲 442 197 0600" />
+  <meta name="keywords" content="iPhone Querétaro, iPhones seminuevos, iPhone liberado, comprar iPhone en Querétaro, iPhone 16, iPhone 17 Pro Max, Plaza de la Tecnología Querétaro, accesorios para iPhone, fundas y micas Querétaro, iPhone Ortiz" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/jpeg" href="imagenes/logo.jpg" />
+  <meta property="og:title" content="iPhone Ortiz | iPhones Seminuevos Liberados y Garantizados en Querétaro" />
+  <meta property="og:description" content="Calidad que sí se nota. iPhones seminuevos, liberados y garantizados en Plaza de la Tecnología, Querétaro. Garantía por escrito y atención personalizada." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="imagenes/iphone-pro-titanio-trio.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       LOADER — apertura tipo obturador de cámara desde el centro
+  ============================================================ -->
+  <div id="siteLoader" class="site-loader" aria-hidden="true">
+    <div class="loader-panel loader-panel-l"></div>
+    <div class="loader-panel loader-panel-r"></div>
+    <div class="loader-content">
+      <div class="loader-logo">
+        <img src="imagenes/logo.jpg" alt="iPhone Ortiz" />
+      </div>
+      <div class="loader-bar-track"><div class="loader-bar-fill" id="loaderBarFill"></div></div>
+      <div class="loader-percent" id="loaderPercent">0%</div>
+      <p class="loader-tagline">Calidad Que Sí Se Nota</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header id="navbar" class="navbar">
+    <div class="navbar-inner">
+      <a href="#inicio" class="logo-wrap">
+        <img src="imagenes/logo.jpg" alt="iPhone Ortiz" class="logo-icon-img" />
+        <span class="logo-text">IPHONE ORTIZ</span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#inicio"     class="nav-link">Inicio</a>
+        <a href="#productos"  class="nav-link">Modelos</a>
+        <a href="#coleccion"  class="nav-link">Colección</a>
+        <a href="#garantia"   class="nav-link">Garantía</a>
+        <a href="#accesorios" class="nav-link">Accesorios</a>
+        <a href="#sobre-mi"   class="nav-link">Nosotros</a>
+        <a href="#contacto"   class="nav-link">Contacto</a>
+      </nav>
+      <div class="nav-right">
+        <a href="#productos" class="btn-nav">Ver Modelos</a>
+        <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-nav">
+        <a href="#inicio"     class="nav-link-mobile" onclick="closeMobileMenu()">Inicio</a>
+        <a href="#productos"  class="nav-link-mobile" onclick="closeMobileMenu()">Modelos</a>
+        <a href="#coleccion"  class="nav-link-mobile" onclick="closeMobileMenu()">Colección</a>
+        <a href="#garantia"   class="nav-link-mobile" onclick="closeMobileMenu()">Garantía</a>
+        <a href="#accesorios" class="nav-link-mobile" onclick="closeMobileMenu()">Accesorios</a>
+        <a href="#sobre-mi"   class="nav-link-mobile" onclick="closeMobileMenu()">Nosotros</a>
+        <a href="#contacto"   class="nav-link-mobile" onclick="closeMobileMenu()">Contacto</a>
+        <a href="#productos" class="btn-nav mt-mobile" onclick="closeMobileMenu()">Ver Modelos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section id="inicio" class="hero-section">
+
+      <div class="hero-mesh" aria-hidden="true">
+        <div class="hero-blob blob-a"></div>
+        <div class="hero-blob blob-b"></div>
+        <div class="hero-blob blob-c"></div>
+      </div>
+      <div class="hero-grid-pattern" aria-hidden="true"></div>
+      <canvas id="heroParticles" class="hero-particles-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-inner">
+
+        <div class="hero-text-col">
+
+          <div class="hero-badge hero-el" data-delay="0" id="heroBadge">
+            <span class="badge-dot"></span>
+            Tienda Física · Plaza de la Tecnología, Querétaro
+          </div>
+
+          <h1 class="hero-title hero-el" data-delay="1" id="heroTitle">
+            Calidad que sí se nota,
+            <em class="hero-em"> en cada iPhone que vendemos.</em>
+          </h1>
+
+          <p class="hero-sub hero-el" data-delay="3" id="heroSub">
+            iPhones seminuevos 100% originales, liberados de fábrica para cualquier compañía, con
+            <strong>garantía por escrito y Face ID funcionando al 100%.</strong>
+          </p>
+
+          <div class="hero-ctas hero-el" id="heroCtas" data-delay="4">
+            <a href="#productos" class="btn-primary btn-mag">
+              <span>Ver Modelos Disponibles</span>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <span class="btn-shine-fx"></span>
+            </a>
+            <a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20cotizar%20un%20iPhone" class="btn-ghost btn-mag" target="_blank" rel="noopener noreferrer">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16"/></svg>
+              <span>Cotizar Por WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="hero-trust hero-el" id="heroTrust" data-delay="5">
+            <div class="trust-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#E31E2A" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Libre De Fábrica</div>
+            <div class="trust-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#E31E2A" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Garantía Por Escrito</div>
+            <div class="trust-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#E31E2A" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>Face ID Al 100%</div>
+            <div class="trust-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#E31E2A" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>Tarjeta o Transferencia</div>
+          </div>
+
+          <div class="hero-stats hero-el" id="heroStats" data-delay="6">
+            <div class="hstat"><span class="hstat-num" data-count-to="40">0</span><span class="hstat-lbl">Días De Garantía</span></div>
+            <div class="hstat-sep"></div>
+            <div class="hstat"><span class="hstat-num" data-count-to="100" data-suffix="%">0%</span><span class="hstat-lbl">Equipos Originales</span></div>
+            <div class="hstat-sep"></div>
+            <div class="hstat"><span class="hstat-num" data-count-to="3" data-prefix="+">+0</span><span class="hstat-lbl">Piezas Precio Mayoreo</span></div>
+          </div>
+
+        </div>
+
+        <div class="hero-visual-col hero-el" id="heroVisual">
+          <div class="hero-product-card" id="heroProductCard">
+            <div class="hero-glow-ring"></div>
+            <img src="imagenes/iphone-pro-titanio-trio.jpeg" alt="iPhone 16 Pro Max en tonos titanio disponible en iPhone Ortiz" class="hero-product-img" id="heroProductImg" />
+            <div class="hero-product-vignette"></div>
+            <div class="hero-product-badge">
+              <div>
+                <div class="hpb-name">iPhone 16 Pro Max</div>
+                <div class="hpb-tag">256 GB · Seminuevo</div>
+              </div>
+              <div class="hpb-price">Disponible</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="scroll-cue" id="scrollCue">
+        <div class="sc-mouse"><div class="sc-wheel"></div></div>
+        <span>Explorar</span>
+      </div>
+
+    </section>
+
+    <!-- ============================================================
+         MODELOS DESTACADOS
+    ============================================================ -->
+    <div id="productos">
+
+      <!-- ── 01: IPHONE 17 PRO MAX ── imagen izquierda -->
+      <section class="product-section ps-chamana" data-product="1">
+        <div class="ambient-particles" aria-hidden="true"><span class="ap-1"></span><span class="ap-2"></span><span class="ap-3"></span><span class="ap-4"></span><span class="ap-glyph ap-5">✦</span><span class="ap-glyph ap-6">◆</span></div>
+        <div class="ps-container">
+          <div class="ps-image-col ps-img-left">
+            <div class="ps-img-wrap prod-reveal-img">
+              <div class="ps-img-glow glow-green"></div>
+              <img src="imagenes/iphone-17-promax-naranja-solo.jpeg" alt="iPhone 17 Pro Max color naranja, vista trasera con cámara triple" class="ps-img" loading="lazy"/>
+              <div class="ps-img-frame"></div>
+            </div>
+          </div>
+          <div class="ps-info-col prod-reveal-text">
+            <div class="ps-eyebrow">
+              <span class="ps-number">01</span>
+              <span class="ps-line"></span>
+              <span class="ps-category">Lo Más Nuevo</span>
+            </div>
+            <h2 class="ps-name">iPhone 17 Pro Max</h2>
+            <p class="ps-tagline">Potencia y diseño que se roban las miradas.</p>
+            <p class="ps-desc">
+              El buque insignia de Apple, ahora accesible. El iPhone 17 Pro Max 256 GB combina el rendimiento más rápido, una cámara profesional y un diseño premium que no pasa desapercibido en ningún lugar.
+            </p>
+            <div class="ps-price"><span class="ps-price-amount">$22,700</span><span class="ps-price-note">256 GB · Precio de mayoreo desde 3 piezas</span></div>
+            <ul class="ps-benefits">
+              <li><span class="ps-dot"></span>256 GB de almacenamiento, espacio de sobra para todo</li>
+              <li><span class="ps-dot"></span>Libre de fábrica, compatible con cualquier compañía</li>
+              <li><span class="ps-dot"></span>Incluye cargador, mica y nota de garantía por escrito</li>
+            </ul>
+            <div class="ps-cta-row">
+              <a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20el%20iPhone%2017%20Pro%20Max%20256%20GB%20de%20iPhone%20Ortiz" class="btn-primary btn-mag" target="_blank" rel="noopener noreferrer">
+                <span>Cotizar 17 Pro Max</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <span class="btn-shine-fx"></span>
+              </a>
+              <a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20el%20iPhone%2017%20Pro%20Max%20256%20GB%20de%20iPhone%20Ortiz" target="_blank" rel="noopener noreferrer" class="ps-link">Ver más detalles →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 02: IPHONE 16 PLUS ── imagen derecha -->
+      <section class="product-section ps-santa ps-reverse" data-product="2">
+        <div class="ambient-particles" aria-hidden="true"><span class="ap-1"></span><span class="ap-2"></span><span class="ap-3"></span><span class="ap-4"></span><span class="ap-glyph ap-7">✦</span><span class="ap-glyph ap-8">◆</span></div>
+        <div class="ps-container">
+          <div class="ps-info-col prod-reveal-text">
+            <div class="ps-eyebrow">
+              <span class="ps-number">02</span>
+              <span class="ps-line"></span>
+              <span class="ps-category">Más Vendido</span>
+            </div>
+            <h2 class="ps-name">iPhone 16 Plus</h2>
+            <p class="ps-tagline">Pantalla grande, batería que dura, precio que conviene.</p>
+            <p class="ps-desc">
+              El equilibrio perfecto entre tamaño, rendimiento y precio. Nuestro modelo más pedido: 128 GB seminuevo, sin detalles, con funciones al 100% y Face ID funcionando perfecto.
+            </p>
+            <div class="ps-price"><span class="ps-price-amount">$14,000</span><span class="ps-price-note">128 GB · Precio de mayoreo desde 3 piezas</span></div>
+            <ul class="ps-benefits">
+              <li><span class="ps-dot"></span>Semi nuevo, sin detalles, revisado antes de la venta</li>
+              <li><span class="ps-dot"></span>0 cuentas, listo para cualquier SIM</li>
+              <li><span class="ps-dot"></span>40 días de garantía por escrito</li>
+            </ul>
+            <div class="ps-cta-row">
+              <a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20el%20iPhone%2016%20Plus%20128%20GB%20de%20iPhone%20Ortiz" class="btn-primary btn-mag" target="_blank" rel="noopener noreferrer">
+                <span>Cotizar 16 Plus</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <span class="btn-shine-fx"></span>
+              </a>
+              <a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20el%20iPhone%2016%20Plus%20128%20GB%20de%20iPhone%20Ortiz" target="_blank" rel="noopener noreferrer" class="ps-link">Ver más detalles →</a>
+            </div>
+          </div>
+          <div class="ps-image-col ps-img-right">
+            <div class="ps-img-wrap prod-reveal-img">
+              <div class="ps-img-glow glow-blue"></div>
+              <img src="imagenes/hero-iphones-colores.jpeg" alt="iPhone 16 Plus en varios colores: morado, blanco, azul y magenta" class="ps-img" loading="lazy"/>
+              <div class="ps-img-frame"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 03: IPHONE 16 ── imagen izquierda -->
+      <section class="product-section ps-libertad" data-product="3">
+        <div class="ambient-particles" aria-hidden="true"><span class="ap-1"></span><span class="ap-2"></span><span class="ap-3"></span><span class="ap-4"></span><span class="ap-glyph ap-5">✦</span><span class="ap-glyph ap-6">◆</span></div>
+        <div class="ps-container">
+          <div class="ps-image-col ps-img-left">
+            <div class="ps-img-wrap prod-reveal-img">
+              <div class="ps-img-glow glow-teal"></div>
+              <img src="imagenes/iphone-16-cajas-azul-verde-negro-blanco.jpeg" alt="Cajas de iPhone 16 en azul, verde, negro y blanco" class="ps-img" loading="lazy"/>
+              <div class="ps-img-frame"></div>
+            </div>
+          </div>
+          <div class="ps-info-col prod-reveal-text">
+            <div class="ps-eyebrow">
+              <span class="ps-number">03</span>
+              <span class="ps-line"></span>
+              <span class="ps-category">El Favorito</span>
+            </div>
+            <h2 class="ps-name">iPhone 16</h2>
+            <p class="ps-tagline">Justo a tiempo para cada momento importante.</p>
+            <p class="ps-desc">
+              Pantalla espectacular, rendimiento que vuela y el diseño que todos voltean a ver. Disponible en varios colores para que elijas el que va contigo.
+            </p>
+            <div class="ps-price"><span class="ps-price-amount">128 GB</span><span class="ps-price-note">Pregunta disponibilidad y precio actual por WhatsApp</span></div>
+            <ul class="ps-benefits">
+              <li><span class="ps-dot"></span>Varios colores disponibles en tienda</li>
+              <li><span class="ps-dot"></span>Original, libre de fábrica, funciones al 100%</li>
+              <li><span class="ps-dot"></span>Entrega con equipo, cargador y mica</li>
+            </ul>
+            <div class="ps-cta-row">
+              <a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20el%20iPhone%2016%20128%20GB%20de%20iPhone%20Ortiz" class="btn-primary btn-mag" target="_blank" rel="noopener noreferrer">
+                <span>Cotizar iPhone 16</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <span class="btn-shine-fx"></span>
+              </a>
+              <a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20el%20iPhone%2016%20128%20GB%20de%20iPhone%20Ortiz" target="_blank" rel="noopener noreferrer" class="ps-link">Ver más detalles →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 04: IPHONE 16 PRO MAX ── imagen derecha -->
+      <section class="product-section ps-amate ps-reverse" data-product="4">
+        <div class="ambient-particles" aria-hidden="true"><span class="ap-1"></span><span class="ap-2"></span><span class="ap-3"></span><span class="ap-4"></span><span class="ap-glyph ap-7">✦</span><span class="ap-glyph ap-8">◆</span></div>
+        <div class="ps-container">
+          <div class="ps-info-col prod-reveal-text">
+            <div class="ps-eyebrow">
+              <span class="ps-number">04</span>
+              <span class="ps-line"></span>
+              <span class="ps-category">Tope De Gama</span>
+            </div>
+            <h2 class="ps-name">iPhone 16 Pro Max</h2>
+            <p class="ps-tagline">Rendimiento profesional, cámara de otro nivel.</p>
+            <p class="ps-desc">
+              256 GB para capturar cada momento en máxima calidad. El chip más potente de su generación en un diseño de titanio que se siente tan bien como se ve.
+            </p>
+            <div class="ps-price"><span class="ps-price-amount">256 GB</span><span class="ps-price-note">Pregunta disponibilidad y precio actual por WhatsApp</span></div>
+            <ul class="ps-benefits">
+              <li><span class="ps-dot"></span>Cámara triple profesional, cuerpo de titanio</li>
+              <li><span class="ps-dot"></span>Equipo 100% original, sin reportes ni bloqueos</li>
+              <li><span class="ps-dot"></span>40 días de garantía por escrito</li>
+            </ul>
+            <div class="ps-cta-row">
+              <a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20el%20iPhone%2016%20Pro%20Max%20256%20GB%20de%20iPhone%20Ortiz" class="btn-primary btn-mag" target="_blank" rel="noopener noreferrer">
+                <span>Cotizar 16 Pro Max</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <span class="btn-shine-fx"></span>
+              </a>
+              <a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20el%20iPhone%2016%20Pro%20Max%20256%20GB%20de%20iPhone%20Ortiz" target="_blank" rel="noopener noreferrer" class="ps-link">Ver más detalles →</a>
+            </div>
+          </div>
+          <div class="ps-image-col ps-img-right">
+            <div class="ps-img-wrap prod-reveal-img">
+              <div class="ps-img-glow glow-red"></div>
+              <img src="imagenes/iphone-pro-titanio-trio.jpeg" alt="iPhone 16 Pro Max en tonos titanio: azul, plata y negro" class="ps-img" loading="lazy"/>
+              <div class="ps-img-frame"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /productos -->
+
+    <!-- ===== CÓMO COMPRAR ===== -->
+    <section class="ritual-section">
+      <div class="ambient-particles" aria-hidden="true"><span class="ap-1"></span><span class="ap-2"></span><span class="ap-3"></span><span class="ap-4"></span><span class="ap-glyph ap-5">✦</span><span class="ap-glyph ap-6">◆</span></div>
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-tag reveal-up">Proceso Simple</div>
+          <h2 class="section-title reveal-up">Así De Fácil Es Comprar Tu iPhone</h2>
+          <p class="section-sub reveal-up">4 pasos para tener tu iPhone en tus manos, con toda la confianza.</p>
+        </div>
+        <div class="ritual-steps">
+          <div class="ritual-step reveal-up" style="--i:0"><div class="rs-number">01</div><div class="rs-tag rtag-chamana">EXPLORA</div><h3 class="rs-title">Explora</h3><p class="rs-desc">Revisa nuestros modelos disponibles y elige el que más te convenga.</p><div class="rs-arrow">→</div></div>
+          <div class="ritual-step reveal-up" style="--i:1"><div class="rs-number">02</div><div class="rs-tag rtag-santa">WHATSAPP</div><h3 class="rs-title">Cotiza</h3><p class="rs-desc">Escríbenos al 442 197 0600 y te confirmamos disponibilidad y precio al instante.</p><div class="rs-arrow">→</div></div>
+          <div class="ritual-step reveal-up" style="--i:2"><div class="rs-number">03</div><div class="rs-tag rtag-libertad">TIENDA</div><h3 class="rs-title">Verifica</h3><p class="rs-desc">Visítanos en Plaza de la Tecnología, local 396, y revisa tu equipo antes de comprar.</p><div class="rs-arrow">→</div></div>
+          <div class="ritual-step reveal-up" style="--i:3"><div class="rs-number">04</div><div class="rs-tag rtag-amate">GARANTÍA</div><h3 class="rs-title">Llévatelo</h3><p class="rs-desc">Paga con tarjeta o transferencia y sal con tu iPhone, cargador, mica y garantía por escrito.</p><div class="rs-arrow rs-final">✦</div></div>
+        </div>
+        <div class="ritual-cta reveal-up">
+          <div class="ritual-cta-box">
+            <p class="rcta-text"><em class="gold-em">Tu próximo iPhone,</em> está a un mensaje de distancia.</p>
+            <a href="https://wa.me/524421970600?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20iPhone%20Ortiz" class="btn-primary btn-mag" target="_blank" rel="noopener noreferrer"><span>Escribir Por WhatsApp</span><span class="btn-shine-fx"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COLECCIÓN GRID ===== -->
+    <section class="collection-section" id="coleccion">
+      <div class="ambient-particles" aria-hidden="true"><span class="ap-1"></span><span class="ap-2"></span><span class="ap-3"></span><span class="ap-4"></span><span class="ap-glyph ap-7">✦</span><span class="ap-glyph ap-8">◆</span></div>
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-tag reveal-up">Nuestra Colección</div>
+          <h2 class="section-title reveal-up">Elige Tu iPhone Ideal</h2>
+          <p class="section-sub reveal-up">Equipos seminuevos, revisados y listos para entregar en tienda.</p>
+        </div>
+        <div class="products-grid">
+          <article class="product-card pc-chamana reveal-up" style="--i:0">
+            <div class="pc-visual">
+              <div class="pc-glow pc-glow-green"></div>
+              <img src="imagenes/iphone-16-caja-blanco-lavanda.jpeg" alt="iPhone 16 color lavanda y blanco en caja original" class="pc-product-img" loading="lazy"/>
+              <div class="pc-badge">Disponible</div>
+            </div>
+            <div class="pc-info"><h3 class="pc-name">iPhone 16 · Lavanda</h3><p class="pc-purpose">128 GB · Seminuevo</p><p class="pc-desc">Color lavanda, sellado en caja, libre de fábrica y con garantía.</p><a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20el%20iPhone%2016%20color%20Lavanda%20de%20iPhone%20Ortiz" target="_blank" rel="noopener noreferrer" class="btn-product">Cotizar →</a></div>
+          </article>
+
+          <article class="product-card pc-amate reveal-up" style="--i:1">
+            <div class="pc-visual">
+              <div class="pc-glow pc-glow-red"></div>
+              <img src="imagenes/iphone-17-promax-naranja-caja.jpeg" alt="iPhone 17 Pro Max color naranja en caja original" class="pc-product-img" loading="lazy"/>
+              <div class="pc-badge">Lo Más Nuevo</div>
+            </div>
+            <div class="pc-info"><h3 class="pc-name">iPhone 17 Pro Max · Naranja</h3><p class="pc-purpose">256 GB · Seminuevo</p><p class="pc-desc">El color que se roba las miradas. Cámara triple profesional.</p><a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20el%20iPhone%2017%20Pro%20Max%20color%20Naranja%20de%20iPhone%20Ortiz" target="_blank" rel="noopener noreferrer" class="btn-product">Cotizar →</a></div>
+          </article>
+
+          <article class="product-card pc-santa reveal-up" style="--i:2">
+            <div class="pc-visual">
+              <div class="pc-glow pc-glow-blue"></div>
+              <img src="imagenes/iphone-plata-caja-detalle.jpeg" alt="iPhone color plata en caja original, vista de cámara" class="pc-product-img" loading="lazy"/>
+            </div>
+            <div class="pc-info"><h3 class="pc-name">iPhone · Plata</h3><p class="pc-purpose">Seminuevo · Sellado</p><p class="pc-desc">Acabado plata elegante, listo para cualquier compañía telefónica.</p><a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20el%20iPhone%20color%20Plata%20de%20iPhone%20Ortiz" target="_blank" rel="noopener noreferrer" class="btn-product">Cotizar →</a></div>
+          </article>
+
+          <article class="product-card pc-libertad reveal-up" style="--i:3">
+            <div class="pc-visual">
+              <div class="pc-glow pc-glow-teal"></div>
+              <img src="imagenes/iphone-plata-trio.jpeg" alt="Tres iPhone 16 Pro Max color plata en mano" class="pc-product-img" loading="lazy"/>
+            </div>
+            <div class="pc-info"><h3 class="pc-name">iPhone 16 Pro Max · Plata</h3><p class="pc-purpose">256 GB · Seminuevo</p><p class="pc-desc">Cuerpo de titanio, cámara profesional y máximo rendimiento.</p><a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20el%20iPhone%2016%20Pro%20Max%20color%20Plata%20de%20iPhone%20Ortiz" target="_blank" rel="noopener noreferrer" class="btn-product">Cotizar →</a></div>
+          </article>
+
+          <article class="product-card pc-chamana reveal-up" style="--i:4">
+            <div class="pc-visual">
+              <div class="pc-glow pc-glow-green"></div>
+              <img src="imagenes/iphone-plata-caja-detalle-2.jpeg" alt="iPhone 17 Pro color blanco estelar en caja original" class="pc-product-img" loading="lazy"/>
+            </div>
+            <div class="pc-info"><h3 class="pc-name">iPhone 17 Pro · Blanco Estelar</h3><p class="pc-purpose">Seminuevo · Sellado</p><p class="pc-desc">Acabado premium en blanco estelar, sin detalles.</p><a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20el%20iPhone%2017%20Pro%20color%20Blanco%20Estelar%20de%20iPhone%20Ortiz" target="_blank" rel="noopener noreferrer" class="btn-product">Cotizar →</a></div>
+          </article>
+
+          <article class="product-card pc-santa reveal-up" style="--i:5">
+            <div class="pc-visual">
+              <div class="pc-glow pc-glow-blue"></div>
+              <img src="imagenes/iphone-16-cajas-azul-verde-negro-blanco.jpeg" alt="iPhone 16 color azul en caja original" class="pc-product-img" loading="lazy"/>
+            </div>
+            <div class="pc-info"><h3 class="pc-name">iPhone 16 · Azul</h3><p class="pc-purpose">128 GB · Seminuevo</p><p class="pc-desc">También disponible en verde, negro y blanco. Pregunta por tu color.</p><a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20el%20iPhone%2016%20color%20Azul%20de%20iPhone%20Ortiz" target="_blank" rel="noopener noreferrer" class="btn-product">Cotizar →</a></div>
+          </article>
+
+          <article class="product-card pc-libertad reveal-up" style="--i:6">
+            <div class="pc-visual">
+              <div class="pc-glow pc-glow-teal"></div>
+              <img src="imagenes/hero-iphones-colores.jpeg" alt="iPhone 16 en varios colores disponibles en tienda" class="pc-product-img" loading="lazy"/>
+            </div>
+            <div class="pc-info"><h3 class="pc-name">iPhone 16 · Varios Colores</h3><p class="pc-purpose">128 GB · Seminuevo</p><p class="pc-desc">Morado, blanco, azul y magenta disponibles en tienda.</p><a href="https://wa.me/524421970600?text=Hola,%20quiero%20ver%20los%20colores%20disponibles%20de%20iPhone%2016%20en%20iPhone%20Ortiz" target="_blank" rel="noopener noreferrer" class="btn-product">Cotizar →</a></div>
+          </article>
+
+          <article class="product-card pc-amate reveal-up" style="--i:7">
+            <div class="pc-visual">
+              <div class="pc-glow pc-glow-red"></div>
+              <img src="imagenes/samsung-galaxy-ultra-trio.jpeg" alt="Samsung Galaxy S25 Ultra 256GB libre de fábrica" class="pc-product-img" loading="lazy"/>
+            </div>
+            <div class="pc-info"><h3 class="pc-name">Samsung Galaxy S25 Ultra</h3><p class="pc-purpose">256 GB · Libre De Fábrica</p><p class="pc-desc">$15,500 · Nuestra alternativa Android premium, con la misma garantía.</p><a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20el%20Samsung%20Galaxy%20S25%20Ultra%20de%20iPhone%20Ortiz" target="_blank" rel="noopener noreferrer" class="btn-product">Cotizar →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ¿POR QUÉ IPHONE ORTIZ? ===== -->
+    <section class="identify-section" id="para-ti">
+      <div class="ambient-particles" aria-hidden="true"><span class="ap-1"></span><span class="ap-2"></span><span class="ap-3"></span><span class="ap-4"></span><span class="ap-glyph ap-5">✦</span><span class="ap-glyph ap-6">◆</span></div>
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-tag reveal-up">¿Por Qué iPhone Ortiz?</div>
+          <h2 class="section-title reveal-up">¿Te Identificas Con Esto?</h2>
+          <p class="section-sub reveal-up">Comprar un iPhone seminuevo no debería ser un riesgo.</p>
+        </div>
+        <div class="identify-grid">
+          <div class="identify-card reveal-up" style="--i:0"><div class="id-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><p>Buscas un iPhone bueno, bonito y al mejor precio</p></div>
+          <div class="identify-card reveal-up" style="--i:1"><div class="id-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><p>No quieres arriesgarte con equipos reportados o bloqueados</p></div>
+          <div class="identify-card reveal-up" style="--i:2"><div class="id-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="9"/></svg></div><p>Te preocupa que el Face ID o alguna función no sirva</p></div>
+          <div class="identify-card reveal-up" style="--i:3"><div class="id-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><p>Prefieres comprar en un local establecido, no a ciegas por internet</p></div>
+          <div class="identify-card reveal-up" style="--i:4"><div class="id-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg></div><p>Buscas garantía por escrito, no solo de palabra</p></div>
+          <div class="identify-card reveal-up" style="--i:5"><div class="id-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M12 7V5a2 2 0 0 1 4 0v2"/></svg></div><p>Necesitas tu equipo libre para cualquier compañía telefónica</p></div>
+          <div class="identify-card reveal-up" style="--i:6"><div class="id-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 18.5c3-2 6-4.5 6-8a4 4 0 0 0-6-3.5A4 4 0 0 0 6 10.5c0 3.5 3 6 6 8z"/></svg></div><p>Buscas accesorios originales para cuidar tu inversión</p></div>
+          <div class="identify-card reveal-up" style="--i:7"><div class="id-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><p>Quieres comprar varias piezas a precio de mayoreo</p></div>
+        </div>
+        <div class="identify-cta reveal-up"><p class="identify-cta-text">Encuentra el iPhone perfecto para ti.</p><a href="#productos" class="btn-primary btn-mag"><span>Ver Modelos</span><span class="btn-shine-fx"></span></a></div>
+      </div>
+    </section>
+
+    <!-- ===== GARANTÍA Y CONFIANZA ===== -->
+    <section class="learn-section" id="garantia">
+      <div class="ambient-particles" aria-hidden="true"><span class="ap-1"></span><span class="ap-2"></span><span class="ap-3"></span><span class="ap-4"></span><span class="ap-glyph ap-7">✦</span><span class="ap-glyph ap-8">◆</span></div>
+      <div class="section-container">
+        <div class="learn-grid">
+          <div class="learn-text reveal-left">
+            <div class="section-tag">Compra Con Confianza</div>
+            <h2 class="section-title">Garantía <em>Real, Por Escrito</em></h2>
+            <p class="body-text">En iPhone Ortiz cada equipo pasa por revisión antes de salir de nuestras manos. Por eso podemos ofrecerte una garantía real, por escrito, sin letras chiquitas.</p>
+            <p class="body-text">Compra con la confianza de un local establecido: nos puedes visitar, revisar tu equipo y hacer tus preguntas en persona antes de decidir.</p>
+          </div>
+          <div class="learn-cards reveal-right">
+            <div class="learn-card"><div class="lc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="lc-body"><h4>Garantía Por Escrito</h4><p>40 días de garantía por escrito en todos nuestros equipos, desde el día de tu compra.</p><a href="https://wa.me/524421970600?text=Hola,%20quiero%20saber%20m%C3%A1s%20sobre%20la%20garant%C3%ADa%20de%20iPhone%20Ortiz" target="_blank" rel="noopener noreferrer" class="lc-link">Conocer Garantía →</a></div></div>
+            <div class="learn-card"><div class="lc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div><div class="lc-body"><h4>Equipos 100% Verificados</h4><p>Revisamos Face ID, batería, cámaras y funciones antes de entregarte tu iPhone.</p><a href="https://wa.me/524421970600?text=Hola,%20quiero%20saber%20c%C3%B3mo%20revisan%20los%20equipos%20antes%20de%20vender" target="_blank" rel="noopener noreferrer" class="lc-link">Ver Revisión →</a></div></div>
+            <div class="learn-card"><div class="lc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="lc-body"><h4>Síguenos en Facebook</h4><p>Entérate de nuevos equipos, precios y promociones todos los días.</p><a href="https://www.facebook.com/iphoneortiz396" target="_blank" rel="noopener noreferrer" class="lc-link">Síguenos →</a></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACCESORIOS Y BENEFICIOS ===== -->
+    <section class="business-section" id="accesorios">
+      <div class="ambient-particles" aria-hidden="true"><span class="ap-1"></span><span class="ap-2"></span><span class="ap-3"></span><span class="ap-4"></span><span class="ap-glyph ap-5">✦</span><span class="ap-glyph ap-6">◆</span></div>
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-tag reveal-up">Todo Para Tu iPhone</div>
+          <h2 class="section-title reveal-up">Accesorios Y Beneficios</h2>
+          <p class="section-sub reveal-up">Porque comprar tu iPhone es solo el principio.</p>
+        </div>
+        <div class="business-grid">
+          <div class="biz-card reveal-up" style="--i:0"><div class="biz-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div><h3>Audífonos</h3><p>Audífonos originales y compatibles para complementar tu iPhone.</p></div>
+          <div class="biz-card reveal-up" style="--i:1"><div class="biz-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="2" width="12" height="20" rx="2"/><line x1="10" y1="20" x2="14" y2="20"/></svg></div><h3>Fundas Y Micas</h3><p>Protege tu inversión desde el primer día con fundas y micas de calidad.</p></div>
+          <div class="biz-card reveal-up" style="--i:2"><div class="biz-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="10" x2="23" y2="14"/></svg></div><h3>Cargadores Y Cables</h3><p>Accesorios para tu iPhone siempre disponibles en tienda.</p></div>
+          <div class="biz-card reveal-up" style="--i:3"><div class="biz-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Precio De Mayoreo</h3><p>Precio especial a partir de 3 piezas. Ideal para revendedores.</p></div>
+          <div class="biz-card reveal-up" style="--i:4"><div class="biz-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div><h3>Pago Seguro</h3><p>Aceptamos tarjeta y transferencia, con la confianza de un local establecido.</p></div>
+          <div class="biz-card reveal-up" style="--i:5"><div class="biz-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></div><h3>Garantía Por Escrito</h3><p>Cada equipo sale de nuestra tienda con su nota de garantía firmada.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NUESTRA HISTORIA ===== -->
+    <section class="founder-section" id="sobre-mi">
+      <div class="ambient-particles on-dark" aria-hidden="true"><span class="ap-1"></span><span class="ap-2"></span><span class="ap-3"></span><span class="ap-4"></span><span class="ap-glyph ap-5">✦</span><span class="ap-glyph ap-6">◆</span></div>
+      <div class="section-container">
+        <div class="founder-grid">
+          <div class="founder-text reveal-up founder-text-centered">
+            <div class="section-tag">Nuestra Historia</div>
+            <h2 class="section-title">Un Local Establecido, <em>Hecho Para Confiar</em></h2>
+            <p class="body-text">iPhone Ortiz nació en Plaza de la Tecnología, Querétaro, con una idea simple: vender iPhones buenos, bonitos y al mejor precio, sin arriesgar tu dinero. Cada equipo que sale de nuestra tienda está revisado, liberado de fábrica y respaldado con garantía por escrito.</p>
+            <p class="body-text">No somos una cuenta anónima de internet. Somos un local establecido en Querétaro, con atención personalizada y equipos que puedes revisar antes de comprar.</p>
+            <a href="https://www.facebook.com/iphoneortiz396" target="_blank" rel="noopener noreferrer" class="btn-outline">Síguenos en Facebook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIOS ===== -->
+    <section class="testimonials-section">
+      <div class="ambient-particles" aria-hidden="true"><span class="ap-1"></span><span class="ap-2"></span><span class="ap-3"></span><span class="ap-4"></span><span class="ap-glyph ap-7">✦</span><span class="ap-glyph ap-8">◆</span></div>
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-tag reveal-up">Clientes Reales</div>
+          <h2 class="section-title reveal-up">Lo Que Dicen De Nosotros</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testi-card reveal-up" style="--i:0"><div class="testi-quote">"</div><p class="testi-text">Compré mi iPhone 16 y todo tal cual me lo explicaron: liberado, sin detalles y con garantía por escrito. Se nota que es un negocio serio.</p><div class="testi-author"><div class="testi-avatar">J</div><div><div class="testi-name">Jorge M.</div><div class="testi-role">Cliente iPhone Ortiz</div></div></div><div class="testi-stars">★★★★★</div></div>
+          <div class="testi-card reveal-up" style="--i:1"><div class="testi-quote">"</div><p class="testi-text">Pregunté por WhatsApp y me contestaron al toque. Fui a la tienda, revisé el equipo y me lo llevé el mismo día.</p><div class="testi-author"><div class="testi-avatar">K</div><div><div class="testi-name">Karla V.</div><div class="testi-role">Cliente iPhone Ortiz</div></div></div><div class="testi-stars">★★★★★</div></div>
+          <div class="testi-card reveal-up" style="--i:2"><div class="testi-quote">"</div><p class="testi-text">Compré varios iPhones para revender y me dieron precio de mayoreo. Excelente trato y equipos en muy buen estado.</p><div class="testi-author"><div class="testi-avatar">R</div><div><div class="testi-name">Ricardo T.</div><div class="testi-role">Cliente iPhone Ortiz</div></div></div><div class="testi-stars">★★★★★</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ¿QUÉ IPHONE ELEGIR? ===== -->
+    <section class="diagnosis-section">
+      <div class="ambient-particles" aria-hidden="true"><span class="ap-1"></span><span class="ap-2"></span><span class="ap-3"></span><span class="ap-4"></span><span class="ap-glyph ap-5">✦</span><span class="ap-glyph ap-6">◆</span></div>
+      <div class="section-container">
+        <div class="diagnosis-box reveal-up">
+          <div class="diag-text">
+            <div class="section-tag">Te Ayudamos A Elegir</div>
+            <h2 class="diag-title">¿Aún no sabes <em>qué iPhone comprar?</em></h2>
+            <p class="body-text">Cuéntanos tu presupuesto y para qué lo vas a usar, y te ayudamos a encontrar el equipo perfecto, sin compromiso.</p>
+            <a href="https://wa.me/524421970600?text=Hola,%20a%C3%BAn%20no%20s%C3%A9%20qu%C3%A9%20iPhone%20comprar%2C%20%C2%BFme%20pueden%20ayudar%3F" class="btn-primary btn-mag" target="_blank" rel="noopener noreferrer"><span>Hablar Con Un Asesor</span><span class="btn-shine-fx"></span></a>
+          </div>
+          <div class="diag-visual"><div class="diag-orb dob1"></div><div class="diag-orb dob2"></div><div class="diag-icon"><svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="#E31E2A" stroke-width="0.8"><rect x="7" y="2" width="10" height="20" rx="2.4"/><line x1="10.5" y1="18.5" x2="13.5" y2="18.5"/></svg></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="contact-section" id="contacto">
+      <div class="ambient-particles" aria-hidden="true"><span class="ap-1"></span><span class="ap-2"></span><span class="ap-3"></span><span class="ap-4"></span><span class="ap-glyph ap-7">✦</span><span class="ap-glyph ap-8">◆</span></div>
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-tag reveal-up">Hablemos</div>
+          <h2 class="section-title reveal-up">¿Todo Listo Para <em>Tu Próximo iPhone?</em></h2>
+          <p class="section-sub reveal-up">Escríbenos por WhatsApp y te ayudamos a encontrar tu equipo ideal.</p>
+        </div>
+
+        <div class="contact-wa-layout">
+
+          <!-- Panel izquierdo: solo WhatsApp -->
+          <div class="wa-panel reveal-left">
+            <div class="wa-panel-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            </div>
+            <h3 class="wa-panel-title">Escríbenos por WhatsApp</h3>
+            <p class="wa-panel-desc">Nuestro equipo te ayuda a elegir el iPhone ideal, resolver tus dudas y coordinar tu visita a tienda. Respuesta rápida, sin compromiso.</p>
+
+            <a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20saber%20m%C3%A1s%20sobre%20iPhone%20Ortiz" class="btn-wa-big" target="_blank" rel="noopener noreferrer">
+              <div class="btn-wa-big-pulse"></div>
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              <div class="btn-wa-big-text">
+                <span class="btn-wa-big-label">Chatear ahora</span>
+                <span class="btn-wa-big-num">442 197 0600</span>
+              </div>
+            </a>
+
+            <div class="wa-panel-features">
+              <div class="wa-feat"><span class="wa-feat-dot"></span>Respuesta rápida</div>
+              <div class="wa-feat"><span class="wa-feat-dot"></span>Atención personalizada</div>
+              <div class="wa-feat"><span class="wa-feat-dot"></span>Asesoría sin compromiso</div>
+            </div>
+          </div>
+
+          <!-- Panel derecho: formulario que envía a WA -->
+          <form class="contact-form reveal-right" id="contactForm" onsubmit="handleFormSubmit(event)">
+            <h3 class="form-title">Cuéntanos qué buscas</h3>
+            <p class="form-subtitle">Completa el formulario y te enviamos directamente a WhatsApp con tu información.</p>
+            <div class="form-group">
+              <label class="form-label">Nombre Completo *</label>
+              <input type="text" id="fNombre" class="form-input" placeholder="Tu nombre completo" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Teléfono (opcional)</label>
+              <input type="tel" id="fTelefono" class="form-input" placeholder="+52 xxx xxx xxxx" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">¿Qué te interesa?</label>
+              <select id="fInteres" class="form-input">
+                <option value="">Selecciona una opción</option>
+                <option>Comprar un iPhone</option>
+                <option>Cotización de mayoreo (3+ piezas)</option>
+                <option>Accesorios (audífonos, fundas, micas)</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mensaje</label>
+              <textarea id="fMensaje" class="form-input form-textarea" placeholder="Cuéntanos qué modelo buscas y tu presupuesto..." rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn-wa-submit btn-mag">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              <span>Enviar por WhatsApp</span>
+              <span class="btn-shine-fx"></span>
+            </button>
+            <p class="form-wa-note">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Al enviar, se abrirá WhatsApp con tu mensaje listo para enviar.
+            </p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar">
+      <div class="ambient-particles on-dark" aria-hidden="true"><span class="ap-1"></span><span class="ap-3"></span><span class="ap-glyph ap-5">✦</span></div>
+      <div class="section-container">
+        <div class="trust-bar-grid">
+          <div class="tb-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E31E2A" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><span>Tienda Física en Querétaro</span></div>
+          <div class="tb-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E31E2A" stroke-width="1.5"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M12 7V5a2 2 0 0 1 4 0v2"/></svg><span>Libre de Fábrica · Cualquier Compañía</span></div>
+          <div class="tb-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E31E2A" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Garantía Por Escrito · 40 Días</span></div>
+          <div class="tb-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E31E2A" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg><span>Pago Con Tarjeta o Transferencia</span></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="ambient-particles on-dark" aria-hidden="true"><span class="ap-1"></span><span class="ap-2"></span><span class="ap-3"></span><span class="ap-4"></span><span class="ap-glyph ap-7">✦</span><span class="ap-glyph ap-8">◆</span></div>
+    <div class="section-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="logo-wrap">
+            <img src="imagenes/logo.jpg" alt="iPhone Ortiz" class="logo-icon-img" />
+            <span class="logo-text">IPHONE ORTIZ</span>
+          </a>
+          <p class="footer-tagline">Calidad que sí se nota. iPhones seminuevos, liberados y garantizados en el corazón de Querétaro.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/iphoneortiz396" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20saber%20m%C3%A1s%20sobre%20iPhone%20Ortiz" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12.05 2A9.9 9.9 0 0 0 2.15 11.9a9.8 9.8 0 0 0 1.32 4.95L2 22l5.3-1.39a9.9 9.9 0 0 0 4.75 1.2h.005a9.9 9.9 0 0 0 9.9-9.9A9.9 9.9 0 0 0 12.05 2z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4 class="footer-heading">Navegación</h4><ul class="footer-links"><li><a href="#inicio">Inicio</a></li><li><a href="#productos">Modelos</a></li><li><a href="#garantia">Garantía</a></li><li><a href="#accesorios">Accesorios</a></li><li><a href="#sobre-mi">Nosotros</a></li><li><a href="#contacto">Contacto</a></li></ul></div>
+        <div class="footer-col"><h4 class="footer-heading">Modelos</h4><ul class="footer-links"><li><a href="#productos">iPhone 17 Pro Max</a></li><li><a href="#productos">iPhone 16 Plus</a></li><li><a href="#productos">iPhone 16</a></li><li><a href="#productos">iPhone 16 Pro Max</a></li></ul></div>
+        <div class="footer-col"><h4 class="footer-heading">Contacto</h4><ul class="footer-links"><li><a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20iPhone%20Ortiz" target="_blank" rel="noopener noreferrer">WhatsApp: 442 197 0600</a></li><li><span>Plaza de la Tecnología, Local 396 · Querétaro</span></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 iPhone Ortiz. Todos los derechos reservados.</p><p>Calidad que sí se nota ✦</p></div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/524421970600?text=Hola,%20me%20interesa%20saber%20m%C3%A1s%20sobre%20iPhone%20Ortiz" class="wa-float" id="waFloat" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <div class="wa-pulse"></div>
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    <span class="wa-tooltip">¡Escríbenos!</span>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
